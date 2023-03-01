@@ -3,20 +3,72 @@
   <head>
     <style>
       body {
-        background-image: url("image/background.jpg");
+        background-image: url("image/background.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0;
       }
+      
+      .header {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border: 1px solid #ddd;
+      }
+
+      .header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .header li {
+        float: left;
+        margin-right: 20px;
+      }
+
+      .header li a {
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .header li a:hover {
+        background-color: #ddd;
+      }
+      
+      /* styles for the content section of each page */
+      .content {
+        padding: 20px;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      ul {
+        margin-top: 0;
+      }
     </style>
   </head>
   <body>
-    <frameset cols="25%,75%">
-        <frame src="header.html">
-        <frame name="content" src="publication.html">
-    </frameset>
+    <div class="header">
+      <ul>
+        <li><a href="publication.html">Publications</a></li>
+        <li><a href="research.html">Research Interests</a></li>
+        <li><a href="software.html">Software</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2>Welcome to my website</h2>
+      <p>This is the homepage of my website. Use the navigation bar above to explore my publications, research interests, software projects, and contact information.</p>
+    </div>
+
   </body>
 </html>
-
-
-
