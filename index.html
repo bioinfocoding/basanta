@@ -1,43 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Webpage</title>
     <style>
-      .header {
-        background-color: #f2f2f2;
-        padding: 20px;
-        border: 1px solid #ddd;
-      }
-      .header ul {
-        list-style-type: none;
+      body {
+        background-image: url("image/background.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
         margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-      .header li {
-        float: left;
-        margin-right: 20px;
-      }
-      .header li a {
-        display: block;
-        color: #333;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      .header li a:hover {
-        background-color: #ddd;
       }
     </style>
   </head>
   <body>
-    <div class="header">
-      <ul>
-        <li><a href="publication.html">Publication</a></li>
-        <li><a href="research_interests.html">Research Interests</a></li>
-        <li><a href="software.html">Software</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
+    <frameset cols="25%,75%">
+        <frame src="header.html">
+        <frame name="content" src="publication.html">
+    </frameset>
   </body>
 </html>
+
+
+
