@@ -1,26 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Publication</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>My Website</title>
+	<style>
+		body {
+			background-image: url("image/background.jpeg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		
+		#header {
+			background-color: #333;
+			color: white;
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		#header h1 {
+			font-size: 32px;
+			margin: 0;
+		}
+		
+		#header ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		
+		#header li {
+			margin: 0 20px;
+		}
+		
+		#header a {
+			color: white;
+			text-decoration: none;
+			font-size: 20px;
+		}
+		
+		#header a:hover {
+			border-bottom: 2px solid white;
+		}
+		
+		#main {
+			padding: 50px;
+			text-align: center;
+			color: white;
+			font-size: 24px;
+		}
+	</style>
 </head>
-<body style="background-image: url('image/background.jpg');">
+<body>
 	<div id="header">
 		<h1>My Website</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="publication.html">Publication</a></li>
-				<li><a href="research_interests.html">Research Interests</a></li>
-				<li><a href="software.html">Software</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="publication.html">Publication</a></li>
+			<li><a href="research.html">Research Interests</a></li>
+			<li><a href="software.html">Software</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
 	</div>
-	<div id="content">
+	<div id="main">
 		<h2>Publications</h2>
-		<p>Here are my recent publications:</p>
+		<p>Here is a list of my recent publications:</p>
 		<ul>
 			<li>Publication 1</li>
 			<li>Publication 2</li>
