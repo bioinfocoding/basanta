@@ -5,13 +5,14 @@
 	<style>
 		body {
 			background-image: url('image/background.jpg');
+			background-size: 100% 100%;
 			background-repeat: no-repeat;
 			background-position: center center;
-			background-size: contain;
 			margin: 0;
-			padding: 20px;
+			padding: 200px;
 			font-family: Arial, sans-serif;
 		}
+		
 		
 		#header {
 			background-color: #333;
@@ -20,6 +21,27 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+		}
+		.container {
+		  max-width: 960px;
+		  margin: 0 auto;
+		  padding: 20px;
+		}
+
+		/* Media queries for smaller screens */
+		@media only screen and (max-width: 768px) {
+		  .container {
+		    max-width: 720px;
+		    padding: 10px;
+		  }
+		}
+
+		/* Media queries for even smaller screens */
+		@media only screen and (max-width: 480px) {
+		  .container {
+		    max-width: 320px;
+		    padding: 5px;
+		  }
 		}
 		
 		#header h1 {
@@ -60,7 +82,7 @@
 </head>
 <body>
 	<div id="header">
-		<a href="index.html"><img src="image/logo.png" alt="My Website" style="height: 100px; width: 150px;"></a>
+		<a href="index.html"><img src="image/logo.png" alt="My Website" style="height: 100px; width: 300px;"></a>
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="publication.html">Publication</a></li>
