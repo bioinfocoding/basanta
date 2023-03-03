@@ -2,54 +2,37 @@
 <html>
 <head>
 	<title>My Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		body {
 			background-image: url('image/background.jpg');
-			background-size: 100% 100%;
+			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
-			margin: 0;
-			padding: 200px;
+			margin: 1.5in;
 			font-family: Arial, sans-serif;
 		}
 		
-		
-		#header {
+		header {
 			background-color: #333;
 			color: white;
 			padding: 20px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-		}
-		.container {
-		  max-width: 960px;
-		  margin: 0 auto;
-		  padding: 20px;
-		}
-
-		/* Media queries for smaller screens */
-		@media only screen and (max-width: 768px) {
-		  .container {
-		    max-width: 720px;
-		    padding: 10px;
-		  }
-		}
-
-		/* Media queries for even smaller screens */
-		@media only screen and (max-width: 480px) {
-		  .container {
-		    max-width: 320px;
-		    padding: 5px;
-		  }
+			position: fixed;
+			width: 100%;
+			top: 0;
+			z-index: 1;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 		}
 		
-		#header h1 {
+		header h1 {
 			font-size: 32px;
 			margin: 0;
 		}
 		
-		#header ul {
+		header ul {
 			list-style: none;
 			margin: 0;
 			padding: 0;
@@ -58,42 +41,105 @@
 			align-items: center;
 		}
 		
-		#header li {
+		header li {
 			margin: 0 20px;
 		}
 		
-		#header a {
+		header a {
 			color: white;
 			text-decoration: none;
 			font-size: 20px;
 		}
 		
-		#header a:hover {
+		header a:hover {
 			border-bottom: 2px solid white;
 		}
 		
-		#main {
-			padding: 50px;
+		main {
+			padding: 100px 20px 20px 20px;
 			text-align: center;
 			color: white;
 			font-size: 24px;
+			margin-top: 80px;
+		}
+		
+		footer {
+			background-color: #333;
+			color: white;
+			padding: 20px;
+			text-align: center;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			font-size: 14px;
+			box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+		}
+		
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		
+		/* Media queries for smaller screens */
+		@media only screen and (max-width: 768px) {
+			.container {
+				max-width: 720px;
+				padding: 10px;
+			}
+			header h1 {
+				font-size: 24px;
+			}
+			header a {
+				font-size: 16px;
+			}
+			main {
+				font-size: 20px;
+				padding: 50px 10px 10px 10px;
+			}
+			footer {
+				font-size: 12px;
+			}
+		}
+		
+		/* Media queries for even smaller screens */
+		@media only screen and (max-width: 480px) {
+			.container {
+				max-width: 320px;
+				padding: 5px;
+			}
+			header h1 {
+				font-size: 20px;
+			}
+			header a {
+				font-size: 14px;
+			}
+			main {
+				font-size: 16px;
+				padding: 50px 5px 5px 5px;
+			}
+			footer {
+				font-size: 10px;
+			}
 		}
 	</style>
 </head>
 <body>
-	<div id="header">
-		<a href="index.html"><img src="image/logo.png" alt="My Website" style="height: 100px; width: 300px;"></a>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="publication.html">Publication</a></li>
-			<li><a href="research.html">Research Interests</a></li>
-			<li><a href="software.html">Software</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
+	<header>
+		<div class="container">
+			<h1>My website</h1>
+		</div>
+	</header>
+<main>
+	<h1>Welcome to my website</h1>
+	<p>Thanks for visiting my website. Here you'll find all kinds of information about me and my interests. Feel free to browse around and learn more!</p>
+</main>
+
+<footer>
+	<div class="container">
+		<p>&copy; 2023 My Website. All rights reserved.</p>
 	</div>
-	<div id="main">
-		<h2>Welcome to my website</h2>
-		<p>This is the main page of my website. Use the navigation bar to explore other pages.</p>
-	</div>
+</footer>
 </body>
 </html>
+		
